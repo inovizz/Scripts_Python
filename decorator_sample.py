@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+__author__ = "Sanchit"
+
 import time
 
 def timetest(input_func):
@@ -26,37 +30,25 @@ def foobar(*args, **kwargs):
     print args, kwargs
 
 
+# foobar(1,2,3,4, a=9, b=7)
 
+#------------------------------ Another basic example-----------------------------------
+def debug(f):            # debug decorator takes function f as parameter
+    msg = f.__name__     # debug message to print later
+    def wrapper(*args):  # wrapper function takes function f's parameters
+        exec_time=  time.time()
+        print msg, exec_time     # print debug message or do something before executing that function
+        res =  f(*args)  # call to original function
+        return res
+    return wrapper       # return the wrapper function, without calling it
 
+@debug
+def mul(x):
+    return x**2
 
-def add(*args):
-    a = 0
-    if len(args)>0:
-        for i in args:
-            a+=i
-    return a
+@debug
+def div(x, y):
+    return x / y
 
-# print add(1,2,4,5)
-# foobar(["hello, world"], foo=2, bar=5)
-
-
-def square(func):
-    def inner_func(*args,**kwargs):
-        print "inside decorator"
-        result = func(*args,**kwargs)
-        return result
-    return inner_func()
-
-@square
-def numbers_sum(*args,**kwargs):
-    a = args
-    b = kwargs
-    print a
-    print b
-    if isinstance(a, int) and isinstance(b, int):
-        return a+b
-    else:
-        return "Fucking Hell"
-
-
-numbers_sum(1,2)
+print mul(2)
+print div(4,2)
