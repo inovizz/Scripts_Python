@@ -15,7 +15,6 @@ def fibonacci(limit):
         count += 1
 for n in fibonacci(10):
     print n,
-
 # ---------------------- using recursion -----------------------------
 print "\n"
 

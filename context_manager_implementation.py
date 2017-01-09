@@ -20,3 +20,4 @@ for _ in range(10000):
     with File('fooo.txt', 'w') as infile:
         infile.write('fooo')
         files.append(infile)
+

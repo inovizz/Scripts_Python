@@ -27,7 +27,6 @@ def accend(lst):
 if __name__ == "__main__":
     accend(sys.argv[1])
 
-
 # ----------------------------------------------------------------------------------
 
 from itertools import combinations

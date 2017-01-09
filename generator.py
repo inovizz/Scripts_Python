@@ -16,7 +16,6 @@ def fibonacci(limit):
 for n in fibonacci(10):
     print n,
 
-
 #-------------------Generator function to generate iterators -------------
 def gen_interator(start=0, limit=0):
     if start is None:

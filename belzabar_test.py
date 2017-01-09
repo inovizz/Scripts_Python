@@ -23,3 +23,4 @@ def is_belz(number):
 		return False
 
 print is_belz(991)
+

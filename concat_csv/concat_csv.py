@@ -3,24 +3,6 @@
 __author__ = "Sanchit"
 
 import csv, sys
-import logging
-from logging import handlers
-
-LOG_FILENAME = "/var/log/ftp_ingestion.log"
-
-format = "%(asctime)s : %(name)-4s : %(levelname)-4s : %(message)s"
-handler = logging.handlers.RotatingFileHandler(
-                  LOG_FILENAME, maxBytes=100000, backupCount=10)
-handler.setFormatter(logging.Formatter(format))
-logger = logging.getLogger('ftp_ingestion')
-logger.setLevel(logging.DEBUG)
-logger.addHandler(handler)
-
-logger.debug('debug message')
-logger.info('info message')
-logger.warn('warn message')
-logger.error('error message')
-logger.critical('critical message')
 
 def main(file1, file2):
     with open(file1, 'r') as f:

@@ -30,7 +30,7 @@ def foobar(*args, **kwargs):
     print args, kwargs
 
 
-# foobar(1,2,3,4, a=9, b=7)
+foobar(1,2,3,4, a=9, b=7)
 
 #------------------------------ Another basic example-----------------------------------
 def debug(f):            # debug decorator takes function f as parameter
