@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+__author__ = "Sanchit"
+
 import sys
 
 def accend(lst):
@@ -22,6 +26,9 @@ def accend(lst):
 
 if __name__ == "__main__":
     accend(sys.argv[1])
+
+
+# ----------------------------------------------------------------------------------
 
 from itertools import combinations
 def is_swappable(lst):

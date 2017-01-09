@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+__author__ = "Sanchit"
+
 a = [1,78, 67, 97, 0, 23, 67, 78]
 max_diff = 0
 in_po = 0

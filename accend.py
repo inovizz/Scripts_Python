@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+__author__ = "Sanchit"
+
 
 def swap(lst):
     count = 0

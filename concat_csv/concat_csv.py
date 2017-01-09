@@ -1,10 +1,13 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+__author__ = "Sanchit"
+
 import csv, sys
 import logging
 from logging import handlers
 
 LOG_FILENAME = "/var/log/ftp_ingestion.log"
 
-# logging.getLogger('').setLevel(logging.DEBUG)
 format = "%(asctime)s : %(name)-4s : %(levelname)-4s : %(message)s"
 handler = logging.handlers.RotatingFileHandler(
                   LOG_FILENAME, maxBytes=100000, backupCount=10)
@@ -12,7 +15,6 @@ handler.setFormatter(logging.Formatter(format))
 logger = logging.getLogger('ftp_ingestion')
 logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
-
 
 logger.debug('debug message')
 logger.info('info message')
