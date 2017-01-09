@@ -1,3 +1,8 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+__author__ = "Sanchit"
+
+
 def print_triangles(n):
     """
     This function prints triangles of size n

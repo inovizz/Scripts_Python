@@ -1,5 +1,6 @@
 #Python script
 #!/usr/bin/env python
+
 import sys
 import unittest
 
@@ -31,7 +32,7 @@ print roman_conversion_from_int(134)
 print roman_conversion_from_int(345)
 print roman_conversion_from_int(45)
 
-"""
+
 class TestMyFunction(unittest.TestCase):
     def setUp(self):
         pass
@@ -39,12 +40,12 @@ class TestMyFunction(unittest.TestCase):
     def test_my_function(self):
         self.assertEqual(roman_conversion_from_int(1), "I")
         self.assertEqual(roman_conversion_from_int(14), "XIV")
-        
-    def test_my_function(self):
+
+    def test_my_function_2(self):
         self.assertEqual(roman_conversion_from_int(), "Wrong Input")
         self.assertEqual(roman_conversion_from_int("xyz"), "String Input given, integer needed")
 
 if __name__ == '__main__':
     unittest.main()
-    
-"""
+
+
